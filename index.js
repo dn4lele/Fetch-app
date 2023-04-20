@@ -3,7 +3,8 @@ import actions from "./action.js"
 
 const app = express();
 
-app.use(express.json());
+app.set("view engine" , "ejs" )
+app.set("views","views")
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
