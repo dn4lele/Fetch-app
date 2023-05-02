@@ -120,6 +120,7 @@ router.get("/coronatoday",async(req,res)=>{
     const newPositiveData = firstTenPositiveStates.map(item => ({state: item.state, positive: item.positive}));
 
     
+    //return messege
       return res.status(200).json({
         by_death:newData,
         by_positive:newPositiveData
