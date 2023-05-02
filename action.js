@@ -124,10 +124,7 @@ router.get("/coronatoday",async(req,res)=>{
         by_death:newData,
         by_positive:newPositiveData
     })
-    res.render("coronadata", {
-        alldata: top10CountriesByDeaths,
-    });
-   
+
 
 
 })
